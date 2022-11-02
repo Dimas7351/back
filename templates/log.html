@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" />
+  </head>
+  <body>
+    <h1>Enter</h1>
+    <form action="/login" method="post" class="form-contact">
+      <fieldset>
+        <label for="email">Email: <input id="email"  name = "username" required /></label>
+        <label for="password">Password: <input id="password" name="password" pattern="[a-z0-5]{3,}" required /></label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
